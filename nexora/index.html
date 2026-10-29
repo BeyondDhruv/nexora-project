@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nexora</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div class="app" id="app">
+    <aside class="side" id="side">
+      <div class="brand">
+        <svg width="30" height="40" viewBox="0 0 32 32">
+          <defs>
+            <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="1" stop-color="#6D3FE8"/>
+            </linearGradient>
+          </defs>
+          <rect width="32" height="32" rx="9" fill="url(#lg)"/>
+          <path d="M10.5 23V9.5L21.5 22.5V9" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Nexora
+      </div>
+
+      <nav class="nav" id="nav"></nav>
+    </aside>
+
+  <div class="scrim" id="scrim" data-act="nav-close"></div>
+
+  <div class="main">
+    <header class="top">
+      <button class="btn icon ghost menu-btn" aria-label="Open navigation"></button>
+
+      <div class="gsearch" role="search">
+
+        <span class="si" data-ic="search"></span>
+        <input id="gs" type="search" placeholder="Search anything…" autocomplete="off">
+        <div class="pop" id="gs-res" hidden></div>
+
+      </div>
+
+      <div class="top-r">
+        <button class="btn icon ghost" data-act="theme" id="theme-btn"></button>
+        <div class="popwrap">
+          <button class="btn icon ghost" id="bell" data-pop="notif">
+            <span data-ic="bell"></span>
+            <i class="dot" id="bell-dot"></i>
+          </button>
+          <div class="pop" id="notif" hidden></div>
+        </div>
+        <div class="user">
+          <span class="avatar" aria-hidden="true">RM</span>
+          <span class="u-t">
+            <b>Rahul Mehta</b>
+            <small>Operations Manager</small>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="view" id="view" tabindex="-1"></main>
+  </div>
+</div>
+
+<div id="modal"></div>
+
+<script src="js/core.js"></script>
+<script src="js/data.js"></script>
+<script src="js/views.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

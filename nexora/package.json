@@ -1,0 +1,9 @@
+{
+  "name": "nexora",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Nexora: operations web app (clients, quotations, sales orders, deliveries, invoices, inventory). Plain HTML, CSS and JavaScript.",
+  "scripts": {
+    "start": "npx --yes serve . -l 5500"
+  }
+}
